@@ -9,21 +9,22 @@
   <body>
     <div id="root"></div>
 
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
+    ></script> -->
     <!-- this is core react file written in purely javascript to perform the logic  -->
 
     <!-- this cross-origin attributes is basically used to verify the cdn we are using sets the access-control-allow-origin: * -->
 
-    <script
+    <!-- <script
       crossorigin 
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <!-- this is react dom file which is basically used for doing modification in DOM -->
+    ></script> -->
+    <!-- this is react dom file which is basically used for doing modification in DOM , it is responsible for rendering UI in browser-->
 
     <!-- Hello world program using react -->
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
+    <!-- normal javascript file doesnt have import and exports thats why we have to make it module -->
   </body>
 </html>
