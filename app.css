@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.app{
+.app {
     background-color: #A9C9FF;
     background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
 }
@@ -46,17 +46,106 @@
     font-size: 14px;
 }
 
-.body{
-    padding:2rem;
+.nav-item {
+    display: flex;
+    align-items: center;
 }
 
-.res-container {
+.nav-links > .nav-item > a {
+    text-decoration: none;
+}
+
+.nav-links > .login-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #C850C0;
+    color: white;
+}
+
+.body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    /* align-items: center; */
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding-right: 3rem;
+}
+
+@media (max-width: 500px) {
+    .filter {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.search-container {
+    display: flex;
+    /* width: 30rem; */
+    justify-content: space-around;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+
+}
+
+.search-bar {
+    /* width: 80%; */
+    /* width:300px; */
+    min-height: 1.5rem;
+    border-radius: 5px;
+}
+
+.search-btn {
+    /* width: 15%; */
+    padding: 0.4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.filter-btn {
+    padding: 0.2rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.filter-btn:hover,
+.search-btn:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 3px 3px 5px 1px grey;
+}
+
+.res-container,
+.shimmer-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1rem;
     justify-content: center;
     align-items: center;
 }
+
+.shimer-card {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    background-color: #c9bebe;
+    border-radius: 15px;
+}
+
 
 .res-cards {
     display: flex;
@@ -74,7 +163,7 @@
 .res-cards:hover {
     border: 2px solid black;
     cursor: pointer;
-     transform: scale(1.04);
+    transform: scale(1.04);
 }
 
 
