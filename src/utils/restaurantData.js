@@ -630,4 +630,273 @@ export const resData = [
       type: "WEBLINK",
     },
   },
+  {
+    info: {
+      id: "322639",
+      name: "The Good Bowl",
+      cloudinaryImageId: "itt9knwuldlbg2h0i7ad",
+      locality: "Sitapur Road",
+      areaName: "Aliganj",
+      costForTwo: "₹400 for two",
+      cuisines: [
+        "Biryani",
+        "North Indian",
+        "Pastas",
+        "Punjabi",
+        "Desserts",
+        "Beverages",
+      ],
+      avgRating: 4.2,
+      feeDetails: {
+        restaurantId: "322639",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 4300,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 4300,
+      },
+      parentId: "7918",
+      avgRatingString: "4.2",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 32,
+        lastMileTravel: 5.6,
+        serviceability: "SERVICEABLE",
+        slaString: "32 mins",
+        lastMileTravelString: "5.6 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-31 03:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹100 OFF",
+        subHeader: "ABOVE ₹159",
+        discountTag: "FLAT DEAL",
+      },
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          text: "BENEFITS",
+          logo: "v1634558776/swiggy_one/OneLogo_3x.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/the-good-bowl-sitapur-road-aliganj-lucknow-322639",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "165050",
+      name: "Mahalaxmi Sweets & Restaurant",
+      cloudinaryImageId: "oqk0mierg0rlhuxoa3ok",
+      locality: "Purania Road",
+      areaName: "Aliganj",
+      costForTwo: "₹300 for two",
+      cuisines: ["Indian", "North Indian"],
+      avgRating: 4.2,
+      veg: true,
+      feeDetails: {
+        restaurantId: "165050",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 5000,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 5000,
+      },
+      parentId: "262175",
+      avgRatingString: "4.2",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 29,
+        lastMileTravel: 6,
+        serviceability: "SERVICEABLE",
+        slaString: "29 mins",
+        lastMileTravelString: "6.0 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-30 22:30:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹100 OFF",
+        subHeader: "ABOVE ₹159",
+        discountTag: "FLAT DEAL",
+      },
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          text: "BENEFITS",
+          logo: "v1634558776/swiggy_one/OneLogo_3x.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/mahalaxmi-sweets-and-restaurant-purania-road-aliganj-lucknow-165050",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "322635",
+      name: "Oven Story Pizza",
+      cloudinaryImageId: "ab979bffbd658e74de650a15ca0092a3",
+      locality: "Sitapur Road",
+      areaName: "Aliganj",
+      costForTwo: "₹400 for two",
+      cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
+      avgRating: 3.9,
+      feeDetails: {
+        restaurantId: "322635",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 4300,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 4300,
+      },
+      parentId: "3534",
+      avgRatingString: "3.9",
+      totalRatingsString: "1K+",
+      sla: {
+        deliveryTime: 35,
+        lastMileTravel: 5.6,
+        serviceability: "SERVICEABLE",
+        slaString: "35 mins",
+        lastMileTravelString: "5.6 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-31 03:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹100 OFF",
+        subHeader: "ABOVE ₹159",
+        discountTag: "FLAT DEAL",
+      },
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          text: "BENEFITS",
+          logo: "v1634558776/swiggy_one/OneLogo_3x.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/oven-story-pizza-sitapur-road-aliganj-lucknow-322635",
+      type: "WEBLINK",
+    },
+  },
 ];
