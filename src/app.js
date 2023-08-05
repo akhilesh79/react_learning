@@ -26,18 +26,66 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Header from "./components/Header";
 import Body from "./components/Body";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu";
+import LoginUser from "./components/LoginUser";
 
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <Body />
+      <Outlet />
     </div>
   );
 };
 
+/*
+To creates routes , we should do first routing configurations in our app.js file
+steps to create configurationa and provide that to our app so that it can be reflected
+1. import createBrowserRouter and Router provider from react-router dom library.
+2. createBrowserRouter will be used to create routing configuration - means an information to browser router that what will happen 
+when we update to some url.
+3. using router provider we provite this configuration to our app.
+4. in order to a create a children routes , we can pass all children routes inside children key.
+5. one functionality is given by react router dom is Outlet , its just a tunnel which will get automatically replaced as per the 
+path given in the url
+*/
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+      {
+        path: "/login",
+        element: <LoginUser />
+      }
+    ],
+    errorElement: <Error />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={router} />);
