@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import { resData } from "../utils/restaurantData";
 import RestaurantContainer from "./RestaurantContainer";
 import Loader from "./Loader";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -69,7 +69,11 @@ const Body = () => {
             <h2>No Results Found</h2>
           ) : (
             filteredRes.map((data) => {
-              return <RestaurantContainer key={data?.info?.id} resData={data} />;
+              return (
+                <Link key={data?.info?.id} to={`/restaurants/${data?.info?.id}`} style={{ textDecoration: 'none' }}>
+                  <RestaurantContainer resData={data} />
+                </Link>
+              );
             })
           )}
         </div>
