@@ -10,17 +10,7 @@ const Header = () => {
 
   const callLoginUser = () => {
     navigate("/login");
-
-    // if (loginButton === "Login") {
-    //   setLoginButton("Logout");
-    // } else {
-    //   setLoginButton("Login");
-    // }
   };
-
-  // useEffect(() => {
-  //   console.log("useEffect renders");
-  // })
 
   return (
     <div className="header">

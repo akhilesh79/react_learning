@@ -35,10 +35,20 @@ import About from "./components/About";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import LoginUser from "./components/LoginUser";
+import useOnlineStatus from "./utils/customHooks/useOnlineStatus";
 
 const AppLayout = () => {
+  const onlineStatus = useOnlineStatus();
+
   return (
     <div className="app">
+      {!onlineStatus ? (
+        <div className="online-container">
+          <h4 className="online-text">😔Looks like you're offline, please check your internet connection!!!</h4>
+        </div>
+      ) : (
+        ""
+      )}
       <Header />
       <Outlet />
     </div>
@@ -80,8 +90,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <LoginUser />
-      }
+        element: <LoginUser />,
+      },
     ],
     errorElement: <Error />,
   },

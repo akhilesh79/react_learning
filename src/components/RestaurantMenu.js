@@ -1,35 +1,12 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import Loader from "./Loader";
-import { MENU_API, ITEM_IMAGE_URI } from "../utils/constants";
+import useMenuData from "../utils/customHooks/useMenuData";
+import { ITEM_IMAGE_URI } from "../utils/constants";
 
 const RestaurantMenu = () => {
-  const [menuData, setMenuData] = useState(null);
-  // const [loading, setLoading] = useState(false);
-
   const { resId } = useParams();
-
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  console.log("rendered");
-
-  const fetchMenu = async () => {
-    try {
-      // setLoading(true);
-      const data = await fetch(MENU_API + resId);
-      const dataInJson = await data.json();
-      if (dataInJson) {
-        // setLoading(false);
-        setMenuData(dataInJson.data);
-        console.log(dataInJson.data);
-      }
-    } catch (error) {
-      // setLoading(false);
-    }
-  };
+  const menuData = useMenuData(resId);
 
   // if (!menuData) return <Loader type={"menu"}/>;
 
@@ -38,7 +15,9 @@ const RestaurantMenu = () => {
 
   const { cards } = menuData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR || [];
 
-  return !menuData ? <Loader type={"menu"} /> : (
+  return !menuData ? (
+    <Loader type={"menu"} />
+  ) : (
     <div className="menu-container">
       <div className="resturant-discription">
         <div className="res-price">
