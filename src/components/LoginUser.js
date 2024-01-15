@@ -16,7 +16,6 @@ const LoginUser = () => {
     validateOnChange: true,
     validateOnBlur: false,
     onSubmit: (values, action) => {
-      // console.log(values);
       action.resetForm();
     },
   });
